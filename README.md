@@ -1,2 +1,2 @@
 # Project_Biblio
-Bibliothèque en ligne conçue par 3 passionnés, avec une base de données sécurisée, une interface intuitive et un système de gestion partagé. Elle permet de stocker, consulter et partager des ouvrages numériques, favorisant l’accès libre à la connaissance et à la culture.
+Le projet de création d’un site web consiste à concevoir, développer et mettre en ligne une plateforme accessible via Internet. Il inclut l’analyse des besoins, la conception du design, le développement technique, l’hébergement, le référencement et la maintenance pour assurer son bon fonctionnement.
