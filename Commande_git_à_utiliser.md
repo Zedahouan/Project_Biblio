@@ -5,7 +5,7 @@ Guide Complet GitHub/VSCode pour Votre Projet Collaboratif
 # Configurer Git (à faire une seule fois par machine)
 git config --global user.name "VotreNomGitHub"
 git config --global user.email "VotreEmailGitHub"
-git config --global init.defaultBranch main
+git config --global init.defaultBranch master
 
 # Vérifier la configuration
 git config --list
@@ -28,14 +28,13 @@ git init
 git add .
 
 # Premier commit
-git commit -m "Initial commit"
+git commit -m "Initial commit" 
 
 # Lier à GitHub (après avoir créé le dépôt sur GitHub)
-git remote add origin https://github.com/votreNom/bibliotheque-en-ligne.git
+git remote add origin (https://github.com/Zedahouan/Project_Biblio.git)
 
 # Pousser vers GitHub
-git push -u origin main
-
+git push -u origin master
 
 
 
@@ -43,10 +42,10 @@ git push -u origin main
 👥 3. Pour les Collaborateurs (Premier Accès au Projet)
 
 # Cloner le dépôt (chaque collaborateur fait ceci une fois)
-git clone https://github.com/votreNom/bibliotheque-en-ligne.git
+git clone (https://github.com/Zedahouan/Project_Biblio.git)
 
 # Se déplacer dans le dossier du projet
-cd bibliotheque-en-ligne
+cd Project_Biblio
 
 # Ouvrir dans VSCode
 code .
@@ -58,7 +57,7 @@ code .
 Avant de commencer à travailler (toujours):
 
 # Se synchroniser avec les dernières modifications
-git pull origin main
+git pull origin master
 
 # Créer une nouvelle branche pour votre feature
 git checkout -b nom-branche-descriptive
@@ -94,10 +93,10 @@ Après approbation de la Pull Request:
 
 
 # Revenir sur la branche main
-git checkout main
+git checkout master
 
 # Mettre à jour la branche main locale
-git pull origin main
+git pull origin master
 
 # Supprimer la branche locale (optionnel)
 git branch -d nom-branche-descriptive
@@ -166,3 +165,66 @@ Créez un .gitignore pour exclure les fichiers inutiles
 Gardez un fichier COMMANDS.md avec ces instructions
 
 Ce workflow permettra à vos 3 collaborateurs de travailler efficacement ensemble sur la bibliothèque en ligne. Chaque modification passera par un processus de review avant d'être intégrée au projet principal.
+
+
+
+
+
+
+
+
+
+
+
+
+Commandes Git et processus collaboratifs (GitHub)
+1. Initialisation du dépôt
+- Commande : git init- Initialise un dépôt Git dans le dossier courant.
+
+
+2. Cloner le projet depuis GitHub
+- Commande : git clone <URL_du_dépôt>- Télécharge une copie locale du projet à partir du dépôt GitHub.
+
+
+3. Créer et changer de branche
+- Créer une branche :
+  git branch <nom_de_la_branche>
+
+- Changer de branche :
+  git checkout <nom_de_la_branche>
+- Permet à chaque collaborateur de travailler sur une partie spécifique sans modifier la branche principale.
+
+
+
+4. Ajouter des fichiers et valider
+- Ajouter les modifications :
+  git add .
+
+- Valider les modifications :
+  git commit -m "Message décrivant les changements"
+- Sauvegarde les modifications avec un message précis.
+
+
+5. Pousser les modifications vers GitHub
+- Commande :
+  git push origin <nom_de_la_branche>
+- Envoie les modifications locales sur la branche distante correspondante.
+
+
+
+6. Créer une Pull Request
+- Accéder au dépôt GitHub.
+- Soumettre une Pull Request depuis votre branche pour que vos modifications soient examinées et fusionnées.
+
+7. Mettre à jour le dépôt local
+- Commande :
+  git pull origin main
+- Récupère les dernières modifications effectuées sur la branche principale.
+
+
+POUR CONFIGURER LE PROJET GIT PAR ADMINS : https://youtu.be/GVEJJQUDVz4?si=EGLa6zWBJyBSWXs0
+COLLABORATEUR NAVIGUE SUR LE PROJET : https://youtu.be/mtBr3mI3rrU?si=8VJNQp0LOlyX5RmA
+
+
+
+
